@@ -1,0 +1,285 @@
+.plupload_button {
+    display: 0;
+    display: inline-block;
+    font: normal 12px sans-serif;
+    text-decoration: none;
+    color: #42454a;
+    border: 1px solid #bababa;
+    padding: 2px 8px 3px 20px;
+    margin-right: 4px;
+    background: #f3f3f3 url(http://assets0.weddings9.com/assets/jquery.plupload.queue/buttons-83619c85c28696943d2cc5e693c8c035.png) no-repeat 0 center;
+    outline: 0;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.plupload_button:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.plupload_disabled,a.plupload_disabled:hover {
+    color: #737373;
+    border-color: #c5c5c5;
+    background: #ededed url(http://assets0.weddings9.com/assets/jquery.plupload.queue/buttons-disabled-6cf0928c012f74e07f24be83f9592d84.png) no-repeat 0 center;
+    cursor: default;
+}
+
+.plupload_add {
+    background-position: -181px center;
+}
+
+.plupload_wrapper {
+    font: normal 11px Verdana,sans-serif;
+    width: 100%;
+}
+
+.plupload_container {
+    padding: 8px;
+    background: url(http://assets3.weddings9.com/assets/jquery.plupload.queue/transp50-1606fa7e5e31e1b51d22b129eb23df19.png);
+}
+
+.plupload_container input {
+    border: 1px solid #ddd;
+    font: normal 11px Verdana,sans-serif;
+    width: 98%;
+}
+
+.plupload_header {
+    background: #2a2c2e url(http://assets1.weddings9.com/assets/jquery.plupload.queue/backgrounds-5740f7a6ce3fd71af490c0c32a2d1b99.gif) repeat-x;
+}
+
+.plupload_header_content {
+    background: url(http://assets1.weddings9.com/assets/jquery.plupload.queue/backgrounds-5740f7a6ce3fd71af490c0c32a2d1b99.gif) no-repeat 0 -317px;
+    min-height: 56px;
+    padding-left: 60px;
+    color: #FFF;
+}
+
+.plupload_header_title {
+    font: normal 18px sans-serif;
+    padding: 6px 0 3px;
+}
+
+.plupload_header_text {
+    font: normal 12px sans-serif;
+}
+
+.plupload_filelist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.plupload_scroll .plupload_filelist {
+    height: 185px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+}
+
+.plupload_filelist li {
+    padding: 10px 8px;
+    background: #f5f5f5 url(http://assets1.weddings9.com/assets/jquery.plupload.queue/backgrounds-5740f7a6ce3fd71af490c0c32a2d1b99.gif) repeat-x 0 -156px;
+    border-bottom: 1px solid #ddd;
+}
+
+.plupload_filelist_header,.plupload_filelist_footer {
+    background: #DFDFDF;
+    padding: 8px;
+    color: #42454A;
+}
+
+.plupload_filelist_header {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.plupload_filelist_footer {
+    border-top: 1px solid #fff;
+    height: 22px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.plupload_file_name {
+    float: left;
+    overflow: hidden;
+}
+
+.plupload_file_status {
+    color: #777;
+}
+
+.plupload_file_status span {
+    color: #42454A;
+}
+
+.plupload_file_size,.plupload_file_status,.plupload_progress {
+    float: right;
+    width: 80px;
+}
+
+.plupload_file_size,.plupload_file_status,.plupload_file_action {
+    text-align: right;
+}
+
+.plupload_filelist .plupload_file_name {
+    width: 205px;
+}
+
+.plupload_file_action {
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-left: 15px;
+}
+
+.plupload_file_action * {
+    display: none;
+    width: 16px;
+    height: 16px;
+}
+
+li.plupload_uploading {
+    background: #ecf3dc url(http://assets1.weddings9.com/assets/jquery.plupload.queue/backgrounds-5740f7a6ce3fd71af490c0c32a2d1b99.gif) repeat-x 0 -238px;
+}
+
+li.plupload_done {
+    color: #AAA;
+}
+
+li.plupload_delete a {
+    background: url(http://assets3.weddings9.com/assets/jquery.plupload.queue/delete-bb757720403940d8e57a27696a19ea0e.gif);
+}
+
+li.plupload_failed a {
+    background: url(http://assets1.weddings9.com/assets/jquery.plupload.queue/error-5c4c65e6240e2c1f28bacf680d8969c7.gif);
+    cursor: default;
+}
+
+li.plupload_done a {
+    background: url(http://assets3.weddings9.com/assets/jquery.plupload.queue/done-f8bd508315a2faafbcdd46086cdf273a.gif);
+    cursor: default;
+}
+
+.plupload_progress,.plupload_upload_status {
+    display: none;
+}
+
+.plupload_progress_container {
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    background: #FFF;
+    padding: 1px;
+}
+
+.plupload_progress_bar {
+    width: 0;
+    height: 7px;
+    background: #CDEB8B;
+}
+
+.plupload_scroll .plupload_filelist_header .plupload_file_action,.plupload_scroll .plupload_filelist_footer .plupload_file_action {
+    margin-right: 17px;
+}
+
+.plupload_clear,.plupload_clearer {
+    clear: both;
+}
+
+.plupload_clearer,.plupload_progress_bar {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+
+li.plupload_droptext {
+    background: transparent;
+    text-align: center;
+    vertical-align: middle;
+    border: 0;
+    line-height: 165px;
+}
+
+.ui-timepicker-div .ui-widget-header {
+    margin-bottom: 8px;
+}
+
+.ui-timepicker-div dl {
+    text-align: left;
+}
+
+.ui-timepicker-div dl dt {
+    height: 25px;
+    margin-bottom: -25px;
+}
+
+.ui-timepicker-div dl dd {
+    margin: 0 10px 10px 65px;
+}
+
+.ui-timepicker-div td {
+    font-size: 90%;
+}
+
+.ui-tpicker-grid-label {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+label.message {
+    color: #C00;
+    display: block;
+}
+
+.dashboxrow {
+    padding: 8px 5px 5px 7px;
+    border-bottom: #ccc solid 1px;
+    height: 22px;
+}
+
+.rowodd {
+    background: #F9F9F9;
+}
+
+.roweven {
+    background: none;
+}
+
+.handle {
+    background: url(http://assets0.weddings9.com/assets/abbazabba/up-down-1578c11b2a910efcb626ba9037798fbe.png) no-repeat 5px 2px;
+}
+
+.facebox-heading {
+    background: url(http://assets2.weddings9.com/assets/abbazabba/fb-bg-ebbc91bd05ee0681a7f1f18638157ed1.png);
+    height: 39px;
+    color: #FFF;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    padding-left: 15px;
+}
+
+.facebox-content {
+    padding: 15px;
+    background: #FFF;
+    min-width: 450px;
+}
+
+.facebox-close {
+    float: right;
+    margin-top: 12px;
+    background: url(http://assets1.weddings9.com/assets/abbazabba/fb-close-d56f9751f0e0a026f46b406fe84ef39e.png) no-repeat;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+ul.sorter {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
