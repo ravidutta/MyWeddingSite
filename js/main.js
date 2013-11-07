@@ -144,13 +144,15 @@ $(document).ready(function() {
   var $balloon = $("#balloon");
 
   var CLOUDS = [
-    {top: "250", offset: "-450px", css_class: "cloud-1", delay: .8},
-    {top: "250", offset: "280px", css_class: "cloud-2", delay: .8},
-    {top: "300", offset: "80px", css_class: "cloud-4", delay: .8},
-    {top: "400", offset: "-280px", css_class: "cloud-5", delay: .8},
-    {top: "450", offset: "-30px", css_class: "cloud-4", delay: 1.2},
-    {top: "500", offset: "450px", css_class: "cloud-2", delay: .3},
-    {top: "550", offset: "-480px", css_class: "cloud-1", delay: .8},
+    {top: "260", offset: "-450px", css_class: "cloud-1", delay: .8},
+    {top: "260", offset: "280px", css_class: "cloud-2", delay: .2},
+    {top: "300", offset: "80px", css_class: "cloud-3", delay: .6},
+    {top: "320", offset: "-280px", css_class: "cloud-4", delay: .9},
+    {top: "380", offset: "-20px", css_class: "cloud-5", delay: .1},
+    {top: "400", offset: "380px", css_class: "cloud-4", delay: .5},
+    {top: "450", offset: "-480px", css_class: "cloud-2", delay: 1.0},
+    {top: "480", offset: "-180px", css_class: "cloud-1", delay: .5},  
+    {top: "480", offset: "-180px", css_class: "cloud-1", delay: .5},  
   ];
 
   var zoneControllers = {
