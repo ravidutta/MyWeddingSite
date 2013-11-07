@@ -1181,23 +1181,22 @@ html.no-touch nav ul li:hover {
     float: left;
     position: relative;
     padding: 30px 0;
-    font-family: "Sofadi",Arial,sans-serif;
 }
 
 .ss-left,.ss-right {
     float: left;
-    width: 48%;
+    width: 40%;
     position: relative;
 }
 
 .ss-right {
-    padding-left: 2%;
+    padding-left: 10%;
 }
 
 .ss-left {
     text-align: right;
     float: left;
-    padding-right: 2%;
+    padding-right: 10%;
 }
 
 .ss-center {
@@ -1288,54 +1287,43 @@ html.no-touch nav ul li:hover {
     margin-left: 30%;
 }
 
-.ss-container h3 {
+.ss-container h1 {
     margin-top: 22px;
     padding: 5px 15px;
     line-height: 1.9em;
-    background: #d3846b;
 }
 
-.ss-container .ss-medium h3 {
+.ss-container .ss-medium h1 {
     margin-top: 70px;
 }
 
-.ss-container .ss-large h3 {
+.ss-container .ss-large h1 {
     margin-top: 70px;
 }
 
-.ss-container .ss-left h3 {
-    border-right: 5px solid #a76b7a;
+.ss-container .ss-left h1 {
     padding: 20px;
 }
 
-.ss-container .ss-right h3 {
-    border-left: 5px solid rgba(164,166,181,0.8);
+.ss-container .ss-right h1 {
     padding: 20px;
 }
 
-.ss-container h3 span {
-    color: #FFF;
-    font-size: .7em;
-    display: block;
-    padding: 0;
-    padding-top: 7px;
-    line-height: .9em;
-    font-family: 'Elsie',Arial,sans-serif;
-    text-transform: uppercase;
+.ss-container h1 span {
+    color: #FFFFFF;
+    font-size: .9em;
+    font-family: 'Oldenburg', sans-serif;
 }
 
-.ss-container h3 a {
-    font-size: 22px;
+.ss-container h1 p {
+    font-size: 18px;
     line-height: 24px;
-    color: rgba(255,255,255,0.9);
-    display: block;
-    font-family: 'SpecialElite',Arial,sans-serif;
-    font-weight: 400;
-    padding-top: 4px;
+    color: #FFFFFF;
+    font-family: 'Special Elite', sans-serif;
 }
 
-.ss-container h3 a:hover {
-    color: #fff;
+.ss-container h1 p:hover {
+    color: #FFFFFF;
 }
 
 #ss-container h1 {
@@ -1346,5 +1334,4 @@ html.no-touch nav ul li:hover {
     margin: 0 15px;
     color: rgba(153,157,181,0.6);
     text-shadow: 0 1px 1px #fff;
-    border-bottom: 1px solid rgba(17,17,22,0.1);
 }
