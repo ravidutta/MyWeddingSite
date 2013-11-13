@@ -4,6 +4,8 @@
         <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
         <title>Ravi Kodre and Manpreet Kaur</title>
         
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        
         <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Keania+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
@@ -32,13 +34,13 @@
         <link href="css/normalize.css" media="screen" rel="stylesheet" type="text/css" />
 <!--        <link href="css/MyFontsWebfontsOrderM4551871.css" rel="stylesheet" media="screen"  type="text/css" />-->
         
-        
-        
-
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<!--
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.5&sensor=false&libraries=geometry"></script>
         <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/infobox/1.1.9/src/infobox_packed.js"></script>
         <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.5/src/markerclusterer_packed.js"></script>
         <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/richmarker/src/richmarker-compiled.js"></script>
+-->
 
         <meta content="authenticity_token" name="csrf-param" />
         <meta content="rM3/5UH2h8dFz5lvE9509rZKd0nrr7L4rRu6wL6ERCw=" name="csrf-token" />
@@ -196,9 +198,9 @@
         <div id="movingDivider-1" class="divider" style="background-image:url('img/floral2.jpg');"></div>
         <div id="movingDivider-2" class="divider" style="background-image:url('img/floral3.jpg');"></div>
 
-        <div style="background: #D9DD90">
+        <div id="pictures">
             <div class="inner" style="margin: 0 auto; width:990px; border-solid: 1px #333; text-align: center">
-                <h1 style="color: #C75878; text-align: center; padding-top: 50px">Pictures</h1>
+                <h1 style="font-size: 3em; font-family: 'Autour One', sans-serif; color: #C75878; text-align: center; padding-top: 50px">Pictures</h1>
                 <div style="position: relative; border; width: 540px; height: 160px; margin: 0 auto">
                     <img alt="Green-petal-1" id="green-petal-left" src="img/green-petal.jpg" style="position: absolute; top: 8px; left: 4px" />
                     <img alt="Green-petal" id="green-petal" src="img/green-petal2.png" style="position:absolute; left: 200px" />
@@ -311,7 +313,7 @@
 
 
 
-        <div style="background: #d2836a">
+        <div id="venue">
             <div class="inner" style="margin: 0 auto; width:990px; border-solid: 1px #333; text-align: center; padding: 50px 0 90px 0;">
                 <div style="width: 710px; margin: 0 auto">
                     <img alt="Peafloral-1" id="peafloral-1" src="img/peafloral1.jpg" style="float: left; padding-right: 30px; padding-top: 30px;" />
@@ -326,46 +328,108 @@
                 </div>
 
                 <div class="slide-area">
-                    <h1 style="color: #bdd3b6; text-align: center; margin-top: 30px">Wedding Ceremony</h1>
-                    <div style="; margin: 0 auto; padding: 10px;">
-                        <div class="map_container">
-                            <div id="map0" class="gmaps4rails_map"></div>
-                        </div>
-
-                        <script type="text/javascript" charset="utf-8">
-                            Gmaps.map0 = new Gmaps4RailsGoogle();
-                            Gmaps.load_map0 = function() {
-                                Gmaps.map0.map_options.id = "map0";
-                                Gmaps.map0.map_options.type = "ROADMAP";
-                                Gmaps.map0.map_options.zoom = 1;
-                                Gmaps.map0.map_options.auto_zoom = false;
-
-                                Gmaps.map0.map_options.auto_adjust = true;
-                                Gmaps.map0.initialize();
-
-                                Gmaps.map0.markers = [{"lat":"28.654817","lng":"77.344219",
-                                                        "title":"Location for the Wedding",
-                                                        "description":"<strong>Wedding Ceremony</strong><br />Country Inn & Suites<br />64/6 Site-iv, Sahibabad, Ghaziabad, UP 201010, India ‎"}]
-                                Gmaps.map0.create_markers();
-                                Gmaps.map0.adjustMapToBounds();
-                                Gmaps.map0.callback();
-                            };
-                        </script>
-                    </div>
-                    <div style="text-align: center; color: #FFF; font-size: 1.4em">
-                        Thursday, 26 December 2013,
-                        <br/>
-                        <strong>Country Inn & Suites</strong><br />
-                        64/6 Site-iv, Sahibabad, Ghaziabad, UP 201010, India ‎
-                        <br/>
-                        <em>Information about the Wedding</em>
-                    </div>
+                    <h1 style="font-size: 3em; font-family: 'Autour One', sans-serif; color: #663300; text-align: center; margin-top: 30px; padding-bottom: 100px;">Where-What-When</h1>
+                    
+                    <div id="sidebar" class="sb_blue"></div>
+                    <div id="map"></div>
+                    
                 </div>
+                
+                
+                <script>
+                    var mapOpts = {
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        scaleControl: true,
+                        scrollwheel: false,
+                        zoom: 10,
+                        center: new google.maps.LatLng(28.858204,77.474894)
+                    }
+                    var map = new google.maps.Map(document.getElementById("map"), mapOpts);
+                    var infoWindow = new google.maps.InfoWindow();
+                    var markerBounds = new google.maps.LatLngBounds();
+                    var markerArray = [];
+ 
+                    function makeMarker(options){
+                        var pushPin = new google.maps.Marker({map:map});
+                        pushPin.setOptions(options);
+                        google.maps.event.addListener(pushPin, "click", function(){
+                            infoWindow.setOptions(options);
+                            infoWindow.open(map, pushPin);
+                            if(this.sidebarButton)this.sidebarButton.button.focus();
+                        });
+                    
+                        var idleIcon = pushPin.getIcon();
+                        if(options.sidebarItem){
+                            pushPin.sidebarButton = new SidebarItem(pushPin, options);
+                            pushPin.sidebarButton.addIn("sidebar");
+                        }
+                    
+                        markerBounds.extend(options.position);
+                        markerArray.push(pushPin);
+                        return pushPin;
+                    }
 
+                    google.maps.event.addListener(map, "click", function(){
+                        infoWindow.close();
+                    });
 
-                <script type="text/javascript" charset="utf-8">
-                    Gmaps.loadMaps();
+                    
+                    function SidebarItem(marker, opts){
+                        var tag = opts.sidebarItemType || "button";
+                        var row = document.createElement(tag);
+                        row.innerHTML = opts.sidebarItem;
+                        row.className = opts.sidebarItemClassName || "sidebar_item";  
+//                        row.style.display = "block";
+                        row.style.width = opts.sidebarItemWidth || "280px";
+                        row.onclick = function(){
+                            google.maps.event.trigger(marker, 'click');
+                        }
+                        row.onmouseover = function(){
+                            google.maps.event.trigger(marker, 'mouseover');
+                        }
+                        row.onmouseout = function(){
+                            google.maps.event.trigger(marker, 'mouseout');
+                        }
+                        this.button = row;
+                    }
+                    // adds a sidebar item to a <div>
+                    SidebarItem.prototype.addIn = function(block){
+                        if(block && block.nodeType == 1)this.div = block;
+                        else
+                            this.div = document.getElementById(block)
+                            || document.getElementById("sidebar")
+                            || document.getElementsByTagName("body")[0];
+                            this.div.appendChild(this.button);
+                    }
+                    // deletes a sidebar item
+                    SidebarItem.prototype.remove = function(){
+                        if(!this.div) return false;
+                        this.div.removeChild(this.button);
+                        return true;
+                    }
+                    
+                    makeMarker({
+                      position: new google.maps.LatLng(28.658204,77.474894),
+                      title: "Jai Mala & Cocktail Party",
+                      sidebarItem: "25th Dec",
+                      content: '<div class="infowindow"><h1>Tanushree Farms</h1></br>This day will be the Jai Mala function<h3>3200 Zanker Rd Apt 1209 San Jose</h3></br></br></div>'
+                    });   
+                    makeMarker({
+                      position: new google.maps.LatLng(28.654361,77.34405),
+                      title: "Pheras (Wedding)",
+                      sidebarItem: "26th Dec",
+                      content: '<div class="infowindow"><h1>Country Inn & Suites</h1></br>This day will be the Pheras function<h3>3200 Zanker Rd Apt 1209 San Jose</h3></div>'
+                    });  
+                    makeMarker({
+                      position: new google.maps.LatLng(18.554117,73.904694),
+                      title: "Weddding Reception",
+                      sidebarItem: "28th Dec",
+                      content: '<div class="infowindow"><h1>Hyatt</h1></br>This day will be the wedding reception function<h3>3200 Zanker Rd Apt 1209 San Jose</h3></div>'
+                    }); 
+//                    map.fitBounds(markerBounds);
+                    google.maps.event.trigger(markerArray[0], 'click');
                 </script>
+
             </div>
         </div>
 
@@ -724,7 +788,7 @@
                 $('#picture-2').pan({fps: 30, speed: 2, dir: 'right'});
 
             });
-
+            
         </script>
 
         <script type="text/javascript">

@@ -1113,6 +1113,15 @@ html.no-touch nav ul li:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7d3db', endColorstr='#fceabd',GradientType=0 );    
 }
 
+#pictures {
+    background: #D9DD90; /* Old browsers */
+}
+
+#venue {
+    background: #d2836a; /* Old browsers */
+}
+
+
 #ourStoryHeader {
     position: relative; 
     width: 650px; 
@@ -1166,8 +1175,8 @@ html.no-touch nav ul li:hover {
 
 .ss-container:before {
     position: absolute;
-    width: 4px;
-    background: #d2836a;
+    width: 2px;
+    background: #00868B;
     top: 0;
     left: 50%;
     margin-left: -2px;
@@ -1212,11 +1221,11 @@ html.no-touch nav ul li:hover {
     text-indent: -9000px;
     text-align: left;
     background-size: cover;
-    background-color: #f0f0f0;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center center;
     position: static;
-    border: solid 15px #84a6ae;
+    border: solid 15px #00868B;
 }
 
 .ss-small .ss-circle {
@@ -1241,7 +1250,7 @@ html.no-touch nav ul li:hover {
 .ss-circle-deco:before {
     width: 29%;
     height: 0;
-    border-bottom: 5px dotted #a56a7b;
+    border-bottom: 3px dotted transparent;
     position: absolute;
     top: 50%;
     content: '';
@@ -1269,12 +1278,12 @@ html.no-touch nav ul li:hover {
 
 .ss-left .ss-circle-deco:after {
     right: 0;
-    border-right: 10px solid #a56a7b;
+    border-right: 20px solid transparent;
 }
 
 .ss-right .ss-circle-deco:after {
     left: 0;
-    border-left: 10px solid #a56a7b;
+    border-left: 20px solid transparent;
 }
 
 .ss-left .ss-circle {
@@ -1310,7 +1319,7 @@ html.no-touch nav ul li:hover {
 }
 
 .ss-container h1 span {
-    color: #FFFFFF;
+    color: #00868B;
     font-size: .9em;
     font-family: 'Oldenburg', sans-serif;
 }
@@ -1318,12 +1327,12 @@ html.no-touch nav ul li:hover {
 .ss-container h1 p {
     font-size: 18px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #00868B;
     font-family: 'Special Elite', sans-serif;
 }
 
 .ss-container h1 p:hover {
-    color: #FFFFFF;
+    color: #00868B;
 }
 
 #ss-container h1 {
@@ -1333,5 +1342,204 @@ html.no-touch nav ul li:hover {
     padding: 30px 5px 10px;
     margin: 0 15px;
     color: rgba(153,157,181,0.6);
-    text-shadow: 0 1px 1px #fff;
 }
+
+h1.ss-subtitle {
+    padding: 10px 10px 40px;
+    font-size: 52px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.8);
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+h1.ss-subtitle:before {
+    width: 4px;
+    height: 40px;
+    background: rgba(17,17,22,0.8);
+    content: '';
+    position: absolute;
+    right: 75%;
+    margin-right: -4px;
+    bottom: -4px;
+    -moz-border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+}
+
+h1.ss-subtitle:after {
+    width: 25%;
+    height: 0;
+    border-bottom: 4px dotted rgba(17,17,22,0.8);
+    content: '';
+    position: absolute;
+    right: 50%;
+    margin-right: -1px;
+    bottom: -4px;
+}
+
+.ss-links {
+    position: fixed;
+    left: 10px;
+    top: 166px;
+    width: 25%;
+    z-index: 100;
+}
+
+.ss-links a {
+    background: rgba(0,0,0,0.2);
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    float: left;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    -webkit-transition: background .2s linear;
+    -moz-transition: background .2s linear;
+    -o-transition: background .2s linear;
+    -ms-transition: background .2s linear;
+    transition: background .2s linear;
+}
+
+.ss-links a:hover {
+    background: rgba(0,0,0,0.4);
+}
+
+.polaroid-images a
+{
+    background: white;
+    display: inline;
+    float: left;
+    margin: 0 15px 30px;
+    padding: 10px 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+    z-index:0;
+    height: 170px;
+    width: 250px;
+}
+
+.polaroid-images img {
+    display: block;
+    width: inherit;
+    -webkit-filter: grayscale(100%);  
+}
+
+.polaroid-images img:hover {
+    display: block;
+    width: inherit;
+    -webkit-filter: sepia(50%);  
+}
+
+.polaroid-images a:nth-child(2n)
+{
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+.polaroid-images a:nth-child(3n) {
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+
+.polaroid-images a:nth-child(4n)
+{
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+.polaroid-images a:nth-child(5n)
+{
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+
+.polaroid-images a:nth-child(6n)
+{
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+.polaroid-images a:hover{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index:10;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+    box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+
+#map{
+    margin: 0 auto;
+    border-width: 5px;
+    border-style: solid;
+    border-color:#fff;
+    width: 840px;
+    height: 600px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+#sidebar{ 
+    margin: 0 auto;
+}
+.sb_blue button {
+    background-color:#99CCFF;  
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #057fd0;  
+    display:inline-block;
+    color:#3333CC;
+    font-family:"Autour One",sans-serif;
+    font-size:12px;
+    padding:3px 12px;
+    text-decoration:none;
+}
+.sb_blue button:focus {
+    background-color: #eef;
+}
+.sb_blue button:hover {
+    background-color: #fff;
+}
+.infowindow{
+    font-size:5px;
+    width: 250px;
+    height: 350px 
+    color: #000;
+    font-family: "Oldenburg", sans-serif;
+}
+.infowindow h1{
+    font-size:24px;
+    font-weight:bold;
+    width: 250px;
+    color: #004C66;
+    font-family: "Oldenburg", sans-serif;
+}
+.infowindow h3{
+    font-size:12px;
+    font-weight:bold;
+    width: 250px;
+    color: #000;
+    font-family: "Sofadi", sans-serif;
+}
+
+

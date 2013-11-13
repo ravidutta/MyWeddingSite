@@ -41,7 +41,10 @@ a:hover,a:active {
     outline: 0;
 }
 
-
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
 
 h2 {
     font-size: 1.5em;
@@ -234,7 +237,11 @@ table {
     border-spacing: 0;
 }
 
-
+h1 {
+    font-family: "HennyPenny",cursive,serif;
+    font-size: 3.5em;
+    margin: 0;
+}
 
 h2 {
     color: #d28269;
@@ -321,7 +328,7 @@ a {
 
 .period {
     color: rgba(0,0,0,0.8);
-    font-family: "New Rocker", sans-serif;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
     font-size: 20px;
 }
 
@@ -489,6 +496,198 @@ h2.ss-subtitle:after {
     background: rgba(0,0,0,0.4);
 }
 
+.ss-container {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    float: left;
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+
+.ss-container h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #a56a7b;
+    padding: 20px 0;
+    margin: 0;
+    margin: 0 -10px;
+    font-family: 'HennyPenny',Arial,sans-serif;
+}
+
+.ss-container:before {
+    position: absolute;
+    width: 4px;
+    background: #d2836a;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    content: '';
+    height: 100%;
+}
+
+.ss-row {
+    width: 100%;
+    clear: both;
+    float: left;
+    position: relative;
+    padding: 30px 0;
+    font-family: "Sofadi",Arial,sans-serif;
+}
+
+.ss-left,.ss-right {
+    float: left;
+    width: 48%;
+    position: relative;
+}
+
+.ss-right {
+    padding-left: 2%;
+}
+
+.ss-left {
+    text-align: right;
+    float: left;
+    padding-right: 2%;
+}
+
+.ss-center {
+    text-align: right;
+    float: center;
+    padding-right: 2%;
+}
+
+.ss-circle {
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    text-indent: -9000px;
+    text-align: left;
+    background-size: cover;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: static;
+    border: solid 15px #84a6ae;
+}
+
+.ss-small .ss-circle {
+    width: 100px;
+    height: 100px;
+}
+
+.ss-medium .ss-circle {
+    width: 200px;
+    height: 200px;
+}
+
+.ss-large .ss-circle {
+    width: 300px;
+    height: 300px;
+    background-position: -70px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.ss-circle-deco:before {
+    width: 29%;
+    height: 0;
+    border-bottom: 5px dotted #a56a7b;
+    position: absolute;
+    top: 50%;
+    content: '';
+    margin-top: -3px;
+}
+
+.ss-circle-deco:after {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.ss-left .ss-circle-deco:before {
+    right: 2%;
+}
+
+.ss-right .ss-circle-deco:before {
+    left: 2%;
+}
+
+.ss-left .ss-circle-deco:after {
+    right: 0;
+    border-right: 10px solid #a56a7b;
+}
+
+.ss-right .ss-circle-deco:after {
+    left: 0;
+    border-left: 10px solid #a56a7b;
+}
+
+.ss-left .ss-circle {
+    float: right;
+    margin-right: 30%;
+}
+
+.ss-right .ss-circle {
+    float: left;
+    margin-left: 30%;
+}
+
+.ss-container h3 {
+    margin-top: 22px;
+    padding: 5px 15px;
+    line-height: 1.9em;
+    background: #d3846b;
+}
+
+.ss-container .ss-medium h3 {
+    margin-top: 70px;
+}
+
+.ss-container .ss-large h3 {
+    margin-top: 70px;
+}
+
+.ss-container .ss-left h3 {
+    border-right: 5px solid #a76b7a;
+    padding: 20px;
+}
+
+.ss-container .ss-right h3 {
+    border-left: 5px solid rgba(164,166,181,0.8);
+    padding: 20px;
+}
+
+.ss-container h3 span {
+    color: #FFF;
+    font-size: .7em;
+    display: block;
+    padding: 0;
+    padding-top: 7px;
+    line-height: .9em;
+    font-family: 'Elsie',Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+.ss-container h3 a {
+    font-size: 22px;
+    line-height: 24px;
+    color: rgba(255,255,255,0.9);
+    display: block;
+    font-family: 'SpecialElite',Arial,sans-serif;
+    font-weight: 400;
+    padding-top: 4px;
+}
+
+.ss-container h3 a:hover {
+    color: #fff;
+}
 
 .map_container {
     margin: 0 auto;
