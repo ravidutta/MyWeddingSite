@@ -593,7 +593,7 @@ h2.ss-subtitle:after {
 .ss-circle-deco:before {
     width: 29%;
     height: 0;
-    border-bottom: 5px dotted #a56a7b;
+    border-bottom: 5px dotted #000;
     position: absolute;
     top: 50%;
     content: '';
