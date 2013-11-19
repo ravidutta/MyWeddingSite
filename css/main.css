@@ -1493,7 +1493,7 @@ h1.ss-subtitle:after {
     border-style: solid;
     border-color:#fff;
     width: 840px;
-    height: 600px;
+    height: 700px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -1507,39 +1507,58 @@ h1.ss-subtitle:after {
     -webkit-border-radius:6px;
     border-radius:6px;
     border:1px solid #057fd0;  
-    display:inline-block;
+    display: inline-block;
     color:#3333CC;
     font-family:"Autour One",sans-serif;
     font-size:12px;
     padding:3px 12px;
-    text-decoration:none;
+    text-decoration: none;
 }
 .sb_blue button:focus {
-    background-color: #eef;
+    background-color: #2B5090;
+    color: #fff;
 }
 .sb_blue button:hover {
     background-color: #fff;
+    color: #000;
 }
 .infowindow{
-    font-size:5px;
-    width: 250px;
-    height: 350px 
-    color: #000;
+    width:510px;
+    font-size:5px; 
+    color: #FFBB71;
     font-family: "Oldenburg", sans-serif;
 }
 .infowindow h1{
-    font-size:24px;
+    font-size:18px;
     font-weight:bold;
-    width: 250px;
-    color: #004C66;
+    width: 500px;
+    color: #D7005B;
+    padding: 5px 5px;
+    font-family: "Verdana", sans-serif;
+}
+.infowindow h2{
+    font-size:12px;
+    font-weight:bold;
+    width: 500px;
+    color: #000;
+    padding: 5px 5px;
+    text-align: center;
     font-family: "Oldenburg", sans-serif;
 }
 .infowindow h3{
-    font-size:12px;
+    font-size:16px;
     font-weight:bold;
-    width: 250px;
-    color: #000;
-    font-family: "Sofadi", sans-serif;
+    width: 500px;
+    color: #009D6A;
+    padding: 5px 5px;
+    font-family: "Courier New", sans-serif;
+}
+.infowindow h4{
+    font-size:14px;
+    font-weight:bold;
+    width: 500px;
+    color: #155182;
+    font-family: "Courier New", sans-serif;
 }
 /* fancyBox v2.1.0 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {
@@ -1609,7 +1628,7 @@ h1.ss-subtitle:after {
 }
 
 #fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span {
-    background-image: url(http://assets0.weddings9.com/assets/fancybox_sprite-1c20a525f7f9b0c3c7216bc31cec6abc.png);
+    background-image: url(../img/fancybox_sprite-1c20a525f7f9b0c3c7216bc31cec6abc.png);
 }
 
 #fancybox-loading {
@@ -1627,7 +1646,7 @@ h1.ss-subtitle:after {
 #fancybox-loading div {
     width: 44px;
     height: 44px;
-    background: url(http://assets2.weddings9.com/assets/fancybox_loading-d2048016f98e3f94cb0a912029d79163.gif) center center no-repeat;
+    background: url(../img/fancybox_loading-d2048016f98e3f94cb0a912029d79163.gif) center center no-repeat;
 }
 
 .fancybox-close {
@@ -1647,7 +1666,7 @@ h1.ss-subtitle:after {
     height: 100%;
     cursor: pointer;
     text-decoration: none;
-    background: transparent url(http://assets3.weddings9.com/assets/blank-99eeeddc62cb4b433bc2c891909ca6f5.gif);
+    background: transparent url(../img/blank-99eeeddc62cb4b433bc2c891909ca6f5.gif);
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     z-index: 8040;
 }
@@ -1703,7 +1722,7 @@ h1.ss-subtitle:after {
     overflow: hidden;
     display: none;
     z-index: 8010;
-    background: url(http://assets3.weddings9.com/assets/fancybox_overlay-38e93017a06036c82b19af173d94ce64.png);
+    background: url(../img/fancybox_overlay-38e93017a06036c82b19af173d94ce64.png);
 }
 
 .fancybox-overlay-fixed {
@@ -1822,7 +1841,7 @@ h1.ss-subtitle:after {
     width: 30px;
     height: 30px;
     text-indent: -9999px;
-    background-image: url(http://assets2.weddings9.com/assets/fancybox_buttons-399c719133e280635150d72255321ca5.png);
+    background-image: url(../img/fancybox_buttons-399c719133e280635150d72255321ca5.png);
     background-repeat: no-repeat;
     outline: none;
     opacity: 0.8;
@@ -1926,6 +1945,8 @@ h1.ss-subtitle:after {
     padding: 0;
 }
 
-
-
-
+#HCB_comment_box {
+    padding-top: 50px;
+    width: 640px;
+    margin: 0 auto;
+}

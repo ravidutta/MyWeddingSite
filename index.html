@@ -13,6 +13,9 @@
         <link href='http://fonts.googleapis.com/css?family=Sofadi' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Oldenburg' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet' type='text/css'>
         
 
         <script src="js/part1.js" type="text/javascript"></script>
@@ -72,7 +75,7 @@
             </div>
 
             <div id="ss-container" class="ss-container">
-                <div class="ss-row ss-large">
+                <div class="ss-row ss-medium">
                     <div class="ss-left" style="left: -50%;">
                         <h1>
                             <span>August, 2007</span>
@@ -200,7 +203,7 @@
                         </h1>
                     </div>
                     <div class="ss-right" style="right: 0%;">
-                        <a class="ss-circle ss-circle-deco" style="border-radius: 10%; background-size: cover; background-image: url('img/engage.png'); background-position: center center"></a>
+                        <a class="ss-circle ss-circle-deco" style="border-radius: 10%; background-size: cover; background-image: url('img/engage.jpg'); background-position: center center"></a>
                     </div>
                 </div>
                 
@@ -311,7 +314,7 @@
                             });
                         };
 
-                        $('#balloon').followTo(4480);
+                        $('#balloon').followTo(4380);
 
 	                	$(document).ready(function() {
 	                    	$(".gallery").fancybox({
@@ -327,8 +330,6 @@
 
         <div style="background: #D9DD90 url('img/frill1.jpg') repeat-x; height: 105px;" id="picture-1"></div>
         <div style="background: #D9DD90 url('img/frill2.jpg') repeat-x; height: 44px;" id="picture-2"></div>
-
-
 
         <div id="venue">
             <div class="inner" style="margin: 0 auto; width:990px; border-solid: 1px #333; text-align: center; padding: 50px 0 90px 0;">
@@ -397,7 +398,7 @@
                         row.innerHTML = opts.sidebarItem;
                         row.className = opts.sidebarItemClassName || "sidebar_item";  
 //                        row.style.display = "block";
-                        row.style.width = opts.sidebarItemWidth || "280px";
+                        row.style.width = opts.sidebarItemWidth || "210px";
                         row.onclick = function(){
                             google.maps.event.trigger(marker, 'click');
                         }
@@ -426,40 +427,134 @@
                     }
                     
                     makeMarker({
+                      position: new google.maps.LatLng(28.671857,77.430449),
+                      title: "Bride Sangeet Ceremony",
+                      sidebarItem: "24th Dec",
+                      content: '<div class ="infowindow">\
+                                    <h1>Bride\'s Sangeet Ceremony</h1>\
+                                    <h2>Fun-filled event at the bride\'s house. Henna (mehendi) will be applied on the bride\'s palms and feet with intricate   patterns. Other women attending the occasion will get mehendi done on their hands. This occasion is also celebrated with song, dance and merriment.</h2>\
+                                    <h3>Manpreet\'s Home</h3>\
+                                    <h4>J/223 Patel Nagar 1, Ghaziabad 201001 UP</h4>\
+                                </div>'
+                    });
+                    makeMarker({
                       position: new google.maps.LatLng(28.658204,77.474894),
-                      title: "Jai Mala & Cocktail Party",
+                      title: "Pre-Wedding Cocktail Party",
                       sidebarItem: "25th Dec",
-                      content: '<div class="infowindow"><h1>Tanushree Farms</h1></br>This day will be the Jai Mala function<h3>3200 Zanker Rd Apt 1209 San Jose</h3></br></br></div>'
+                      content: '<div class ="infowindow">\
+                                    <h1>Cocktail Party & Ring Ceremony</h1>\
+                                    <h2>An evening full of fun, dance, music, drinks, food to celebrate the union of two families</h2>\
+                                    <h3>Tanushree Farm & Palace</h3>\
+                                    <h4>NH 24,Lucknow 474 km Stone, Ghaziabad, UP 201002</h4>\
+                                </div>'
                     });   
                     makeMarker({
                       position: new google.maps.LatLng(28.654361,77.34405),
-                      title: "Pheras (Wedding)",
+                      maxWidth: 600,
+                      title: "Wedding Ceremony",
                       sidebarItem: "26th Dec",
-                      content: '<div class="infowindow"><h1>Country Inn & Suites</h1></br>This day will be the Pheras function<h3>3200 Zanker Rd Apt 1209 San Jose</h3></div>'
+                      content: '<div class ="infowindow">\
+                                    <h1>Wedding Ceremony</h1>\
+                                    <h2>On this auspicious day, the bride and groom will get married in the prescense of their loved ones and families and take their wedding vows together</h2>\
+                                    <h3>Country Inn & Suites By Carlson</h3>\
+                                    <h4>64, Sahibabad Industrial Area Site 4, Sahibabad, Ghaziabad, UP 201010 </h4>\
+                                </div>'
                     });  
                     makeMarker({
                       position: new google.maps.LatLng(18.554117,73.904694),
+                      maxWidth: 600,
                       title: "Weddding Reception",
                       sidebarItem: "28th Dec",
-                      content: '<div class="infowindow"><h1>Hyatt</h1></br>This day will be the wedding reception function<h3>3200 Zanker Rd Apt 1209 San Jose</h3></div>'
-                    }); 
+                      content: '<div class ="infowindow">\
+                                    <h1>Post-Wedding Reception</h1>\
+                                    <h2>A reception party full of food, music and dancing for the returning bride and groom and the guests who couldn\'t make it to the wedding</h2>\
+                                    <h3>Hyatt Pune</h3>\
+                                    <h4>Adjacent to Aga Khan Palace, 88 Nagar Road, Kalyani Nagar, Pune, India, 411006</h4>\
+                                </div>'
+                    });
+                    
 //                    map.fitBounds(markerBounds);
-                    google.maps.event.trigger(markerArray[0], 'click');
+//                    google.maps.event.trigger(markerArray[0], 'click');
                 </script>
 
             </div>
         </div>
 
 
-        <div style="background: #FFF url('img/divider1.jpg') repeat-x; height: 182px;"></div>
-        <div style="background: #FFF">
+        <div style="background: #6395a8 url('img/divider1.jpg') repeat-x; height: 182px;"></div>
+        <div style="background: #6395a8">
             <div style="background: #6395a8; height: 180px; padding-top: 35px;">
                 <div style="position: relative; width: 650px; height: 300px; margin: 0 auto">
                     <img alt="Comment-1" id="comment-1" src="img/comment1.jpg" style="position: absolute; left: 0px;" />
                     <img alt="Comment-2" id="comment-2" src="img/comment2.jpg" style="position: absolute; left: 450px;" />
-                    <h1 style="display: block; width: 300px; color: #FFF; text-align: center; position: absolute; left: 150px; top: 15px; ">Comments</h1>
+                    <h1 style="font-size: 2em; font-family: 'Autour One', sans-serif; display: block; width: 300px; color: #FFF; text-align: center; position: absolute; left: 150px; top: 50px; ">Feedback</h1>
                 </div>
             </div>
+            
+            <!-- customize labels of htmlcommentbox.com -->
+            <script>
+            // This code goes ABOVE the main HTML Comment Box code!
+            // replace the text in the single quotes below to customize labels.
+            hcb_user = {
+                //L10N
+                comments_header : '',
+                name_label : 'Name',
+                content_label: 'Enter your comment here',
+                submit : 'Comment',
+                logout_link : '<img title="log out" src="//www.htmlcommentbox.com/static/images/door_out.png" alt="[logout]" class="hcb-icon"/>',
+                admin_link : '<img src="//www.htmlcommentbox.com/static/images/door_in.png" alt="[login]" class="hcb-icon"/>',
+                no_comments_msg: 'No one has commented yet. Be the first!',
+                add:'Add your comment',
+                again: 'Post another comment',
+                rss:'<img src="//www.htmlcommentbox.com/static/images/feed.png" class="hcb-icon" alt="rss"/> ',
+                said:'said:',
+                prev_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_left.png" class="hcb-icon" title="previous page" alt="[prev]"/>',
+                next_page:'<img src="//www.htmlcommentbox.com/static/images/arrow_right.png" class="hcb-icon" title="next page" alt="[next]"/>',
+                showing:'Showing',
+                to:'to',
+                website_label:'website (optional)',
+                email_label:'email',
+                anonymous:'Anonymous',
+                mod_label:'(mod)',
+                subscribe:'email me replies',
+                are_you_sure:'Do you want to flag this comment as inappropriate?',
+                
+                reply:'<img src="//www.htmlcommentbox.com/static/images/reply.png"/> reply',
+                flag:'<img src="//www.htmlcommentbox.com/static/images/flag.png"/> flag',
+                like:'<img src="//www.htmlcommentbox.com/static/images/like.png"/> like',
+                
+                //dates
+                days_ago:'days ago',
+                hours_ago:'hours ago',
+                minutes_ago:'minutes ago',
+                within_the_last_minute:'within the last minute',
+            
+                msg_thankyou:'Thank you for commenting!',
+                msg_approval:'(this comment is not published until approved)',
+                msg_approval_required:'Thank you for commenting! Your comment will appear once approved by a moderator.',
+                
+                err_bad_html:'Your comment contained bad html.',
+                err_bad_email:'Please enter a valid email address.',
+                err_too_frequent:'You must wait a few seconds between posting comments.',
+                err_comment_empty:'Your comment was not posted because it was empty!',
+                err_denied:'Your comment was not accepted.',
+            
+                //SETTINGS
+                MAX_CHARS: 2048,
+                PAGE:'', // ID of the webpage to show comments for. defaults to the webpage the user is currently visiting.
+                RELATIVE_DATES:true // show dates in the form "X hours ago." etc.
+            };
+            </script>
+            <!-- done customizing labels of htmlcommentbox.com -->
+
+            <!-- begin htmlcommentbox.com -->
+            <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+            <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+            <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=(hcb_user.PAGE || ""+window.location), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24ALB9.nkYtstEqCLzPDtIN%2F"+"&opts=84&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ 
+            </script>
+            <!-- end htmlcommentbox.com -->
+            
+<!--
             <div class="inner" style="margin: 0 auto; width:990px; border-solid: 1px #333; text-align: center">
                 <div style="margin: 0 auto; width: 800px; padding-top: 20px; padding-bottom: 100px">
                     <div id="fb-root"></div>
@@ -474,20 +569,25 @@
                     </script>
 
                     <div style="padding-left: 20px; min-height: 300px">
-                        <div class="fb-comments" data-href="http://raviandmanu.weddings9.com" data-num-posts="10" data-width="800"></div>
+                        <div class="fb-comments" data-href="http://manu-n-ravi.com" data-num-posts="10" data-width="800"></div>
                     </div>
                 </div>
             </div>
+-->
         </div>
 
+<!--
         <div style="background: #FFF url('img/bg-comment.jpg') repeat-x; height: 48px;" id="bg-comment-1"></div>
         <div style="background: #FFF url('img/bg-comment1.jpg') repeat-x; height: 19px;" id="bg-comment-2"></div>
+-->
 
+<!--
         <div style="background: #F1EAC6; padding-bottom: 20px;">
             <div id="footer" class="inner" style="font-size: 2.2em; margin: 0 auto; width:990px; border-solid: 1px #333; text-align: center">
                 <br />
             </div>
         </div>
+-->
 
         <script type="text/javascript">
             $ieseven = false;
@@ -1070,5 +1170,6 @@
             })();
         </script>
         <script src="js/main.js"></script>
+        
     </body>
 </html>
