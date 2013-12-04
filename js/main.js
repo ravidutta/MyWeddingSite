@@ -147,12 +147,16 @@ $(document).ready(function() {
     {top: "260", offset: "-450px", css_class: "cloud-1", delay: .8},
     {top: "260", offset: "280px", css_class: "cloud-2", delay: .2},
     {top: "300", offset: "80px", css_class: "cloud-3", delay: .6},
-    {top: "320", offset: "-280px", css_class: "cloud-4", delay: .9},
+    {top: "320", offset: "-280px", css_class: "cloud-3", delay: .9},
     {top: "380", offset: "-20px", css_class: "cloud-5", delay: .1},
     {top: "400", offset: "380px", css_class: "cloud-4", delay: .5},
-    {top: "450", offset: "-480px", css_class: "cloud-2", delay: 1.0},
-    {top: "480", offset: "-180px", css_class: "cloud-1", delay: .5},  
-    {top: "480", offset: "-180px", css_class: "cloud-1", delay: .5},  
+    {top: "450", offset: "-480px", css_class: "cloud-5", delay: 1.0},
+    {top: "590", offset: "180px", css_class: "cloud-2", delay: .5},  
+    {top: "680", offset: "-200px", css_class: "cloud-3", delay: .5},
+    {top: "860", offset: "180px", css_class: "cloud-2", delay: .5},  
+    {top: "950", offset: "-380px", css_class: "cloud-5", delay: .5}, 
+    {top: "860", offset: "-190px", css_class: "cloud-1", delay: .5},  
+    {top: "950", offset: "380px", css_class: "cloud-5", delay: .5}, 
   ];
 
   var zoneControllers = {
@@ -181,7 +185,7 @@ $(document).ready(function() {
       name: $(moment).find("strong").text()
     });
   });
-
+    
   function createClouds() {
     var cloudIndex = 0;
     $moments = $(".moment").not(".bad");
@@ -203,6 +207,23 @@ $(document).ready(function() {
         });
       });
     });
+  }
+    
+  function setUpNavigation() {
+    $("nav li").click(function(e) {
+      var $moment = $($(this).find('a').attr('href'));
+      var balloonMarginTop = parseInt($balloon.css('margin-top'))
+      var hiddenBalloonHeight = balloonMarginTop < 0 ? -1 * balloonMarginTop : 0;
+
+      $moment.each(animationMethods.selectNavItem);
+
+      $('html, body').animate({
+        scrollTop: $moment.offset().top - $moment.height() / 2 + hiddenBalloonHeight - 100
+      }, 1000);
+
+      e.preventDefault();
+      return false;
+    })
   }
 
   var animationHandler = function(e) {
@@ -281,10 +302,10 @@ $(document).ready(function() {
   }
 
   createClouds();
-  // setUpAnimations();
-  // setUpNavigation();
+//  setUpAnimations();
+  setUpNavigation();
 
-  // setTimeout(function() {
-  //   $(window).trigger('scroll')
-  // }, 200);
+//  setTimeout(function() {
+//     $(window).trigger('scroll')
+//  }, 200);
 });
