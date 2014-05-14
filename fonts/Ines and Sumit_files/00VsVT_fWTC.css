@@ -1,0 +1,119 @@
+/*!CK:1281942582!*//*1382379312,173212953*/
+
+._26k{margin:80px 30px 0;text-align:center}
+._26l{color:#3b5998;font-size:14px;font-weight:bold}
+._4kul{word-wrap:break-word}
+
+.FlyoutSubscriptionMenu{min-width:180px}
+.SubscriptionMenu .itemLabel{overflow:hidden}
+div.SubscriptionMenu .SubscriptionMenuCategory .itemAnchor{font-weight:normal}
+div.FriendListSubscribeSubmenu{padding-top:0;padding-bottom:0}
+div.FriendListActionMenu, div.InterestListMenuDisconnect{padding-top:0}
+div.InterestListMenuLists{padding-bottom:0}
+.addToInterestListsClosed .FriendListSubscribeSubmenu{padding-top:4px}
+.addToInterestListsOpen .InterestListCreateList{padding-bottom:4px}
+.NonFriendSubscriptionMenu .hideFromNonFriend, .isUnsubscribed .SubscribeMenuSettingsItem, .subscriptionMenuOpen .FriendListActionMenu, .subscriptionMenuOpen .FlyoutFriendListMenu, .subscriptionMenuOpen .InterestListMenuLists, .subscriptionMenuOpen .InterestListMenuDisconnect, .subscriptionMenuOpen .FriendListSubscribeSubmenu, .subscriptionMenuOpen .AddToInterestListsMenuItem, .addToInterestListsClosed.subscriptionMenuOpen .FlyoutFriendListMenu, .addToInterestListsClosed.subscriptionMenuOpen .InterestListMenuLists, .addToInterestListsClosed.subscriptionMenuOpen .InterestListMenuDisconnect, .addToInterestListsClosed.subscriptionMenuOpen .FriendListSubscribeSubmenu, .addToInterestListsClosed.subscriptionMenuOpen .AddToInterestListsMenuItem, .addToInterestListsOpen .FriendListSubscribeSubmenu, .addToInterestListsOpen .AddToInterestListsMenuItem, .addToInterestListsOpen .InterestListMenuDisconnect, .addToInterestListsClosed .InterestListMenuLists, .addToInterestListsClosed .InterestListMenuGoBack, .cannotSubscribe .FriendListSubscribeSubmenu, .noSubscriptionLevels .SubscribeMenuSettingsItem, .noSubscribeCheckbox .SubscribeMenuSubscribeCheckbox, .pagesSubscribeButtonFlyout .SubscribeMenuSubscribeCheckbox, .FriendListSubscriptionsMenu{display:none}
+.addToInterestListsOpen .InterestListMenuGoBack, .addToInterestListsOpen .InterestListMenuLists, .addToInterestListsClosed .FriendListSubscribeSubmenu, .addToInterestListsClosed .AddToInterestListsMenuItem, .addToInterestListsClosed .InterestListMenuDisconnect, .subscriptionMenuOpen .FriendListSubscriptionsMenu{display:block}
+span.FollowLink .followLinkInlineCheck{display:inline;margin-right:4px}
+.followLinkSubscribed{cursor:default}
+.friendBrowserCheckboxFilters{width:200px;margin:0 auto;float:left}
+.friendBrowserCheckboxFilterHeader{margin-bottom:3px}
+.friendBrowserCheckboxFilterTypeahead{margin-top:3px}
+.friendBrowserCheckboxFilterTypeahead .friendBrowserSearchInput{width:192px}
+.friendBrowserCheckboxContent{width:493px;float:right;position:relative}
+.friendBrowserCheckboxContentOnload{opacity:.3}
+.friendBrowserSubTitle{margin-top:2px;margin-bottom:15px}
+.friendBrowserHeader{margin-bottom:15px}
+.friendBrowserPage{width:713px}
+.friendBrowserPage label{color:#333;font-weight:normal}
+.friendBrowserTypeahead .DOMControl_placeholder{color:#bbb}
+.friendBrowsingCheckboxContentLoadingIndicator{position:absolute;z-index:1;top:90px;left:50%}
+.friendBrowserGrid{width:100%}
+.friendBrowserBlankState{position:relative;text-align:center;top:100px}
+.friend_browser_page_name_box{min-height:65px;line-height:15px;text-align:left;width:100px}
+.friend_browser_page_name_box.huger{min-height:0;padding-top:5px;margin-right:7px;width:112px}
+.friend_browser_addfriend_icon{margin:4px 4px 0 0}
+.friendBrowserRequesting .friendBrowserMutualFriendLink, .friendBrowserRequested .friendBrowserMutualFriendLink, .friendBrowserRequesting .friendBrowserSendingMessage, .friendBrowserRequested .friendBrowserUndoLink{display:none}
+.friendBrowserRequesting .friendBrowserPicture, .friendBrowserRequested .friendBrowserPicture{opacity:.3}
+.friendBrowserExtraSpacing{margin:3px 0}
+.friendBrowserPhotoWrapper{height:75px;width:75px}
+.friendBrowserPhotoCrop{background:#eee;height:75px;width:75px;overflow:hidden;position:absolute}
+div.friendBrowserContentAlignMiddle{height:75px;vertical-align:middle !important}
+.friendBrowserMarginTopTiny{margin-top:2px}
+.friendBrowserMarginTopMini{margin-top:4px}
+.friendBrowserAuxAlignMiddle{margin-top:26px}
+.friendBrowserUnit .photoContainer{position:relative}
+.friendBrowserUnit .closeButtonContainer{left:80px;position:absolute;top:3px;visibility:hidden}
+.friendBrowserUnit .closeButtonContainer.huger{left:94px}
+.friendBrowserPicture.huger{height:112px;width:112px}
+.friendBrowserUnit .smallButton .closeButtonContainer{top:-3px}
+.friendBrowserUnit .horizontalLayout .closeButtonContainer{left:172px}
+.friendBrowserUnit:hover .discardable .closeButtonContainer, .friendBrowserUnit .discardable .closeButtonContainer.visibleClose{visibility:visible}
+.gridUnitPlaceholder{width:110px}
+.localeCustomLayout .friendBrowserUnit{padding:6px 0 2px 0}
+._e9{overflow:hidden}
+.fbRequestList ._ea.animated, .fbRequestList .hasFollowup.animated{-webkit-transition-duration:.15s;-webkit-transition-property:height, left, width;-webkit-transition-timing-function:ease}
+.fbRequestList li div._ea{left:100%;position:absolute;top:0;visibility:hidden}
+.fbRequestList li.followupActivated
+div._ea.active{left:0;position:relative;visibility:visible}
+.fbRequestList .hasFollowup{position:relative;left:0;visibility:visible}
+.fbRequestList .followupActivated .hasFollowup{position:absolute;left:-100%;visibility:hidden}
+.fbRequestList .async_saving{position:relative}
+.fbRequestList .loadingIndicator{display:none;top:50%;left:50%;margin:-5px 0 0 -8px;position:absolute}
+.fbRequestList .async_saving .loadingIndicator{display:block}
+.fbRequestList .async_saving .addButtonWrapper, .fbRequestList .async_saving .uiButton{visibility:hidden}
+div.fbRequestList .addButtonWrapper{display:inline-block;margin-right:5px;text-align:left}
+.fbRequestList .addButtonWrapper .FriendListMenu li, #fbRequestsFlyout .addButtonWrapper .FriendListMenu li{overflow:hidden;padding:0;text-overflow:ellipsis;white-space:nowrap}
+.fbRequestList .networkContextWrapper{margin:2px 0}
+.fbRequestList div.requestStatusBlock{display:block;overflow:hidden;word-break:break-word}
+.fbFriendRequestMsgText{color:#666}
+.fbFriendRequestMsgSeeMore{color:#6d83b3}
+.fbRequestList .localeCustomLayout .auxiliary{padding-bottom:3px;padding-top:4px;text-align:left}
+.fbRequestList .localeCustomLayout .requestLabel{margin-top:-2px;padding-bottom:2px;padding-top:0}
+.UIIntentionalStreamSearch .highlight,
+.UIIntentionalStreamSearch .inserted{color:#000;font-weight:bold;margin:0 0 0 0}
+.UIResultSet_MoreLink{display:block;padding-top:4px}
+.UIResultSet{padding:0 6px}
+.UIResultSet_SuppressBasePadding{padding:0}
+
+.fbDetailedSearchFilterArea{position:relative}
+.fbDetailedSearchFilterArea .detailLoadingIndicator{position:absolute;top:0;right:0}
+.fbDetailedSearchTypeahead{overflow:hidden}
+.detailedsearch_feature_header{background-color:#e9e9e9;border:0;height:7px;margin-bottom:10px;padding:0;text-align:center}
+.detailedsearch_feature_header span{background-color:#fff;padding:0 5px;position:relative;top:-4px;color:gray;font-weight:bold}
+.detailedsearch_result{padding-bottom:5px;border-bottom:1px solid #e9e9e9}
+.detailedsearch_last_result{border-bottom:0 none}
+.detailedsearch_grammar{font-size:14pt}
+.detailedsearch_actions .detailedseach_action_item{white-space:nowrap}
+.searchResultPersonByline .fbProfileBylineFragment{display:block;width:auto}
+.searchResultPersonByline .fbProfileBylineIconContainer .fbProfileBylineIcon{margin:0}
+.searchResultPersonByline .fbProfileBylineIconContainer{width:11px;margin-right:5px;display:inline-block}
+.searchResultPersonByline{width:auto;display:block}
+._3nb{height:17px}
+._3nc{width:100%}
+._3nd{width:50%}
+.sp_9mc51c{background-image:url(/rsrc.php/v2/ys/r/maZrE4Osa4f.png);background-size:auto;background-repeat:no-repeat;display:inline-block;height:13px;width:35px}
+.sx_853076{height:35px;background-position:0 0}
+.sx_19a019{height:35px;background-position:0 -36px}
+.sx_32705e{height:35px;background-position:0 -72px}
+.sx_a3767c{height:35px;background-position:0 -108px}
+.sx_e94f4f{height:35px;background-position:0 -144px}
+.sx_a13504{width:16px;height:16px;background-position:0 -180px}
+.sx_bb1ff3{width:16px;height:16px;background-position:-17px -180px}
+.sx_e1af5d{width:6px;height:11px;background-position:-6px -225px}
+.selected .sx_e1af5d{background-position:0 -225px}
+.sx_361989{width:9px;height:11px;background-position:-13px -225px}
+.sx_a100d0{width:8px;background-position:-20px -211px}
+.sx_b0d6ad{width:11px;background-position:0 -197px}
+.sx_42db1e{width:9px;background-position:-23px -197px}
+.sx_7757a2{width:10px;background-position:-12px -197px}
+.sx_2fa24a{width:9px;background-position:0 -211px}
+.sx_f84349{width:9px;background-position:-10px -211px}
+.sx_04ed55{width:5px;height:7px;background-position:-28px -225px}
+.selected .sx_04ed55{background-position:-23px -225px}
+.objectListItem{padding-bottom:8px;padding-top:8px}
+.passive .objectListItem{color:gray}
+.objectListItem .auxiliary{text-align:right}
+
+#bootloader_Z61dq { height: 42px; }
+.bootloader_Z61dq { display:block !important; }

@@ -1,0 +1,96 @@
+/*!CK:1660713697!*//*1382463653,178195745*/
+
+@-webkit-keyframes show{0%{opacity:0}
+100%{opacity:1}
+}
+.pluginBoxDivider{border-top:1px solid #d8dfea}
+.pluginBoxDividerGray{border-top-color:#ccc}
+.pluginButtonIE b{background:#cad4e7;display:block;font-size:1px;height:1px;margin:0 1px;overflow:hidden}
+.pluginButtonIE .pluginButton{border:0}
+.pluginButtonIEPatty{border:solid #cad4e7;border-width:0 1px}
+.pluginButtonIEPressed b{background:#ddd}
+.pluginButtonIEPressed .pluginButtonIEPatty{border-color:#ddd}
+.pluginSkinDark b{background:#999}
+.pluginSkinDark .pluginButtonIEPatty{border-color:#999}
+.pluginSkinDark .pluginButtonIEPressed b{background:#555}
+.pluginSkinDark .pluginButtonIEPressed .pluginButtonIEPatty{border-color:#555}
+.pluginButtonIE .blueButton.gray .pluginButton{border:none}
+.pluginButtonIE.gray .pluginButtonIEPatty{border-color:rgba(0,0,0,.3)}
+.pluginButtonIE.blue .pluginButtonIEPatty{border:none}
+table.pluginButtonIE.blue, table.pluginButtonIE.gray{width:100%}
+.pluginButton{background:#eceef5;-webkit-border-radius:3px;border:1px solid #cad4e7;cursor:pointer;padding:2px 6px 4px;white-space:nowrap;color:#3b5998}
+.pluginButtonInline{display:inline-block}
+.pluginButtonX{cursor:default}
+.pluginButton button{background:transparent;border:0;margin:-1px;padding:0;font:inherit;color:inherit;cursor:pointer}
+.pluginButtonIcon{position:relative;top:3px;margin-right:3px}
+.pluginButtonSmall{padding:0 5px 2px 5px}
+.pluginButtonSmall .pluginButtonIcon{margin-right:2px}
+.pluginButtonIconPlaceholder{display:block;height:14px;width:5px}
+.pluginButton:hover{border-color:#9dacce}
+.pluginButtonPressed, .pluginButtonPressed:hover{background-color:#eee;border-color:#ddd;color:#aaa}
+.pluginSkinDark .pluginButton{background-color:#c7c7c7;border-color:#999;color:#333}
+.pluginSkinDark .pluginButton:hover{background-color:#d9d9d9;border-color:#ddd}
+.pluginSkinDark .pluginButtonPressed, .pluginSkinDark .pluginButtonPressed:hover{background-color:#444;border-color:#555;color:#666}
+.pluginButtonErrorLink{color:#a00;font-weight:bold}
+.pluginButtonX .pluginButtonXOff, .pluginButtonX button:hover .pluginButtonXOn, .pluginButtonX button:focus .pluginButtonXOn{display:inline-block}
+.pluginButtonX .pluginButtonXOn, .pluginButtonX button:hover .pluginButtonXOff, .pluginButtonX button:focus .pluginButtonXOff{display:none}
+.pluginButton .pluginButtonThrobber, form.async_saving .pluginButtonIconWithThrobber{display:none}
+form.async_saving .pluginButtonThrobber{display:inline-block;margin-top:2px;margin-bottom:1px;max-width:14px}
+.pluginConnectTextDark a{color:#fff}
+.pluginConnectTextDark{color:gray}
+.pluginErrorLink{color:#f03d25}
+.pluginFacepileConnectLast, .pluginFacepileConnectConnected .pluginFacepileConnectFirst{-webkit-animation:show .4s;display:inline-block !important}
+.pluginFacepileConnectFirst, .pluginFacepileConnectConnected .pluginFacepileConnectLast{display:none !important}
+.pluginFontArial, .pluginFontArial button, .pluginFontArial input, .pluginFontArial label, .pluginFontArial select, .pluginFontArial td, .pluginFontArial textarea{font-family:"arial", sans-serif}
+.pluginFontLucida, .pluginFontLucida button, .pluginFontLucida input, .pluginFontLucida label, .pluginFontLucida select, .pluginFontLucida td, .pluginFontLucida textarea{font-family:"lucida grande", sans-serif}
+.pluginFontSegoe, .pluginFontSegoe button, .pluginFontSegoe input, .pluginFontSegoe label, .pluginFontSegoe select, .pluginFontSegoe td, .pluginFontSegoe textarea{font-family:"segoe ui", sans-serif}
+.pluginFontTahoma, .pluginFontTahoma button, .pluginFontTahoma input, .pluginFontTahoma label, .pluginFontTahoma select, .pluginFontTahoma td, .pluginFontTahoma textarea{font-family:"tahoma", sans-serif}
+.pluginFontTrebuchet, .pluginFontTrebuchet button, .pluginFontTrebuchet input, .pluginFontTrebuchet label, .pluginFontTrebuchet select, .pluginFontTrebuchet td, .pluginFontTrebuchet textarea{font-family:"trebuchet ms", sans-serif}
+.pluginFontVerdana, .pluginFontVerdana button, .pluginFontVerdana input, .pluginFontVerdana label, .pluginFontVerdana select, .pluginFontVerdana td, .pluginFontVerdana textarea{font-family:"verdana", sans-serif}
+.pluginFontHelvetica, .pluginFontHelvetica button, .pluginFontHelvetica input, .pluginFontHelvetica label, .pluginFontHelvetica select, .pluginFontHelvetica td, .pluginFontHelvetica textarea{font-family:'Helvetica Neue', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif}
+.pluginLikeboxStream{overflow-x:hidden;overflow-y:auto}
+.pluginSkinDark #pluginLikeboxMoreStories a{color:#555}
+
+body.plugin{background:transparent;overflow:hidden;-webkit-text-size-adjust:none}
+._4s7c{border:1px solid #aaa;border-top-color:#315c99}
+._4-nd{float:right}
+.pluginSkinDark,
+.pluginSkinDark .fcb{color:gray}
+.pluginSkinDark a.uiLinkSubtle,
+.pluginSkinDark .fcg{color:#555}
+.pluginSkinDark a,
+.pluginSkinDark .uiHeader h3{color:#fff}
+.sp_25oo7a{background-image:url(/rsrc.php/v2/yY/r/vjfYp2iVeDM.png);background-size:auto;background-repeat:no-repeat;display:inline-block;height:14px;width:14px}
+.sx_edad5c{background-position:0 0}
+.sx_f41bb1{background-position:0 -15px}
+.sx_e52148{background-position:0 -30px}
+.sx_a0e737{background-position:0 -45px}
+.sx_91b071{background-position:0 -60px}
+.sx_d088f8{background-position:0 -75px}
+.sx_c2e392{background-position:0 -90px}
+.sx_c44369{background-position:0 -105px}
+.sx_c7a1e3{background-position:0 -120px}
+.sx_3c4305{background-position:0 -135px}
+.sx_86a933{background-position:0 -150px}
+.sp_favicon{background-image:url(/rsrc.php/v2/yB/r/Xo2O9__RZZk.png);background-size:auto;background-repeat:no-repeat;display:inline-block;height:14px;width:14px}
+.sx_favicon_fav{background-position:0 0}
+.sx_favicon_favgrey{background-position:0 -15px}
+.sp_like-dark{background-image:url(/rsrc.php/v2/yI/r/emOmmWgG54X.png);background-size:auto;background-repeat:no-repeat;display:inline-block;height:14px;width:14px}
+.sx_like-dark_fav{background-position:0 0}
+.sx_like-dark_favgrey{background-position:0 -15px}
+.sx_like-dark_ch{background-position:0 -30px}
+.sx_like-dark_x{background-position:0 -45px}
+.sx_like-dark_thumb{background-position:0 -60px}
+.sx_like-dark_send{background-position:0 -75px}
+.sx_like-dark_sendp{background-position:0 -90px}
+.sp_like{background-image:url(/rsrc.php/v2/y-/r/tbhIfdAHjXE.png);background-size:auto;background-repeat:no-repeat;display:inline-block;height:14px;width:14px}
+.sx_like_fav{background-position:0 0}
+.sx_like_favgrey{background-position:0 -15px}
+.sx_like_ch{background-position:0 -30px}
+.sx_like_x{background-position:0 -45px}
+.sx_like_thumb{background-position:0 -60px}
+.sx_like_send{background-position:0 -75px}
+.sx_like_sendp{background-position:0 -90px}
+
+#bootloader_wKTu4 { height: 42px; }
+.bootloader_wKTu4 { display:block !important; }
